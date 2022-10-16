@@ -1,0 +1,7 @@
+<p>Choose a staff member to view:</p>
+
+<ul>
+    #for(name in allNames):
+        <li><a href="#(name)">#capitalized(name)</a></li>
+    #endfor
+</ul>

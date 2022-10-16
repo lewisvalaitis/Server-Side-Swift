@@ -1,0 +1,18 @@
+#extend("master"):
+    #export("title"):Home#endexport
+
+    #export("body"):
+        #if("username"):
+            <h1>Welcome back, #(username)!</h1>
+            
+            <ul>
+                #for(forum in forums):
+                        <li><a href="https://www.hackingwithswift.com/forum/#(forum.id)">#(forum.name)</a></li>
+                #endfor
+            </ul>
+                        
+        #else:
+            <a href="login">Please log in.</a>
+        #endif
+    #endexport
+#endextend

@@ -1,0 +1,9 @@
+#extend("master"):
+    #export("title"):Staff#endexport
+   
+    #export("h1"):At Million Hairs we have the best staff!#endexport
+   
+    #export("body"):
+        #extend("staffList")
+    #endexport
+#endextend

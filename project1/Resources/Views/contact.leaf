@@ -1,0 +1,9 @@
+#extend("master"):
+    #export("title"):Contact#endexport
+
+    #export("body"):
+        <p>Call us on 555-1234.</p>
+    #endexport
+    
+    #export("h1"):Get in touch#endexport
+#endextend

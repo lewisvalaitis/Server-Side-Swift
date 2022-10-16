@@ -1,0 +1,25 @@
+#if(name):
+    #extend("master"):
+        #export("title"):#capitalized(name)#endexport
+    
+        #export("h1"):#capitalized(name)#endexport
+            
+        #export("body"):
+            <p>#(bio)</p>
+            
+            #extend("staffList")
+        #endexport
+    #endextend
+#else:
+    #extend("master"):
+        #export("title"):Staff#endexport
+    
+        #export("h1"):Unknown Staff Member#endexport
+            
+        #export("body"):
+            <p>We did not recognise that person.</p>
+            
+            #extend("staffList")
+        #endexport
+    #endextend
+#endif
